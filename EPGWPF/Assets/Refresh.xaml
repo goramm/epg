@@ -1,0 +1,11 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:EPGWPF">
+    <Geometry x:Key="refreshGeometry1">F1 M64,64z M0,0z M46.919,11.84L44.99,26.232 48.49,24.787A17.988,17.988,0,0,1,23.905,48.059L19.388,57A27.991,27.991,0,0,0,57.179,19.772L60.847,18.232z</Geometry>
+    <Geometry x:Key="refreshGeometry2">F1 M64,64z M0,0z M23,16.411A17.96,17.96,0,0,1,40.1,15.941L44.617,7.005A27.991,27.991,0,0,0,6.82100000000001,44.228L3.153,45.768 17.081,52.16 19.01,37.768 15.51,39.213A18.026,18.026,0,0,1,23,16.411z</Geometry>
+    <DrawingGroup x:Key="refreshDrawingGroup" ClipGeometry="M0,0 V64 H64 V0 H0 Z">
+        <GeometryDrawing Brush="#444444" Geometry="{StaticResource refreshGeometry1}" />
+        <GeometryDrawing Brush="#666666" Geometry="{StaticResource refreshGeometry2}" />
+    </DrawingGroup>
+    <DrawingImage x:Key="refreshDrawingImage" Drawing="{StaticResource refreshDrawingGroup}" />
+</ResourceDictionary>
